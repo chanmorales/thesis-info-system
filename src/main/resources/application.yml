@@ -1,0 +1,32 @@
+# Spring
+spring:
+  application:
+    name: Thesis Info System
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tims
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: true
+
+# Spring Security
+security:
+  jwt:
+    secret-key: 210d3d27605d0ee737952294265400a7cba109746afacd84b9cb0139bf6b7e3a
+    expiration-time: 3600000
+
+# Logging
+logging:
+  level:
+    org.springframework: TRACE
+
+# Default Credentials
+app:
+  default:
+    email: admin@admin.com
+    password: admin
