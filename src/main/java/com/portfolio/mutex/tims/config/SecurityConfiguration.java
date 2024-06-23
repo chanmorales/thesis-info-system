@@ -28,7 +28,9 @@ public class SecurityConfiguration {
    * Whitelisted requests that doesn't need user to be authenticated
    */
   private static final String[] WHITELIST_REQUESTS = {
-      "/auth/**"
+      "/auth/**",
+      "/swagger-ui/**",
+      "/v3/api-docs"
   };
 
   /**

@@ -30,3 +30,7 @@ app:
   default:
     email: admin@admin.com
     password: admin
+
+# Spring Doc
+springdoc:
+  packagesToScan: com.portfolio.mutex.tims.controller
